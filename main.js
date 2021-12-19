@@ -37,7 +37,7 @@ function draw(){
         g=random(255);
         b=random(255);
         objectDetector.detect(video,gotResult);
-        for(i=0; i<objects.length; i++){
+        for(i=0;i<objects.length;i++){
 if(objects[i].label=="person"){
     song.stop();
             document.getElementById("status").innerHTML="Status : Object Detected ";
