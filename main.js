@@ -38,7 +38,8 @@ function draw(){
         b=random(255);
         objectDetector.detect(video,gotResult);
         for(i=0; i<objects.length; i++){
-if(objects.label=="person"){
+if(objects[i].label=="person"){
+    song.stop();
             document.getElementById("status").innerHTML="Status : Object Detected ";
             document.getElementById("number").innerHTML="Baby Found";
             fill(r,g,b);
